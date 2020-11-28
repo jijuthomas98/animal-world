@@ -1,0 +1,91 @@
+[
+      {
+      "id": 0,
+      "productAnimal": "Chimpanzees",
+      "image": "🐒",
+      "from": "Tropical Africa",
+      "no":"1",
+      "description":"The chimpanzee, also known as the common chimpanzee, robust chimpanzee, or simply chimp, is a species of great ape native to the forest and savannah of tropical Africa. It has four confirmed subspecies and a fifth proposed subspecies. The chimpanzee and the closely related bonobo are classified in the genus Pan. Evidence from fossils and DNA sequencing shows that Pan is a sister taxon to the human lineage and is humans' closest living relative."
+   
+   
+      },
+      {
+        "id": 1,
+        "productAnimal": "Orcas",
+        "image": "🐳",
+        "from": "All 5 oceans",
+        "no":"2",
+        "description":"The killer whale or orca is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and other species of dolphin. They have been known to attack baleen whale calves, and even adult whales. Killer whales are apex predators, as no animal preys on them. A cosmopolitan species, they can be found in each of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas, absent only from the Baltic and Black seas, and some areas of the Arctic Ocean."
+     
+      },
+      {
+        "id": 2,
+        "productAnimal": "Elephants",
+        "image": "🐘",
+        "from": "subtropical regions of Africa and Asia",
+        "no":"3",
+        "description":"Elephants are mammals of the family Elephantidae and the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea; extinct members include the mastodons. The family Elephantidae also contains several now-extinct groups, including the mammoths and straight-tusked elephants. African elephants have larger ears and concave backs, whereas Asian elephants have smaller ears, and convex or level backs. Distinctive features of all elephants include a long proboscis called a trunk, tusks, large ear flaps, massive legs, and tough but sensitive skin. The trunk is used for breathing, bringing food and water to the mouth, and grasping objects. Tusks, which are derived from the incisor teeth, serve both as weapons and as tools for moving objects and digging. The large ear flaps assist in maintaining a constant body temperature as well as in communication. The pillar-like legs carry their great weight."
+     
+      },
+      {
+        "id": 3,
+        "productAnimal": "African Grey Parrots",
+        "image": "🦜",
+        "from": "Central Africa",
+        "no":"4",
+        "description":"The grey parrot, also known as the Congo grey parrot, Congo African grey parrot or African grey parrot, is an Old World parrot in the family Psittacidae. The Timneh parrot once was identified as a subspecies of the grey parrot, but has since been elevated to a full species."
+    
+     
+      },
+      {
+        "id": 4,
+        "productAnimal": "Octopus",
+        "image": "🐙",
+        "from": "Tropical waters",
+        "no":"5",
+        "description":"The octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. Around 300 species are recognised, and the order is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids. Like other cephalopods, the octopus is bilaterally symmetric with two eyes and a beak, with its mouth at the center point of the eight limbs. The soft body can rapidly alter its shape, enabling octopuses to squeeze through small gaps. They trail their eight appendages behind them as they swim. The siphon is used both for respiration and for locomotion, by expelling a jet of water. Octopuses have a complex nervous system and excellent sight, and are among the most intelligent and behaviourally diverse of all invertebrates."
+     
+     
+      },
+      {
+        "id": 5,
+        "productAnimal": "Pig",
+        "image": "🐖",
+        "from": "worldwide, previously eurasia",
+        "no":"6",
+        "description":"A pig is any of the animals in the genus Sus, within the even-toed ungulate family Suidae. Pigs include domestic pigs and their ancestor, the common Eurasian wild boar, along with other species. Pigs, like all suids, are native to the Eurasian and African continents, ranging from Europe to the Pacific islands. Suids other than the pig are the babirusa of Indonesia, the pygmy hog of Asia, the warthog of Africa, and another genus of pigs from Africa. The suids are a sister clade to peccaries."
+     
+     
+      },
+      {
+        "id": 6,
+        "productAnimal": "Dog",
+        "image": "🐕",
+        "no":"7",
+        "from": "worldwide",
+        "description":"The dog is a domesticated carnivore of the family Canidae. It is part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant gray wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated, and has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes."
+     
+     
+      },
+      {
+        "id": 7,
+        "productAnimal": "Goat",
+        "image": "🐐",
+        "from": "worldwide",
+        "no":"8",
+        "description":"The domestic goat or simply goat is a subspecies of C. aegagrus domesticated from the wild goat of Southwest Asia and Eastern Europe. The goat is a member of the animal family Bovidae and the subfamily Caprinae, meaning it is closely related to the sheep. There are over 300 distinct breeds of goat. It is one of the oldest domesticated species of animal, and has been used for milk, meat, fur and skins across much of the world. Milk from goats is often turned into goat cheese."
+     
+     
+      },
+      {
+        "id": 8,
+        "productAnimal": "Squirrel",
+        "image": "🐿️",
+        "from": "worldwide",
+        "no":"9",
+        "description":"Squirrels are members of the family Sciuridae, a family that includes small or medium-size rodents. The squirrel family includes tree squirrels, ground squirrels, chipmunks, marmots, flying squirrels, and prairie dogs amongst other rodents. Squirrels are indigenous to the Americas, Eurasia, and Africa, and were introduced by humans to Australia. The earliest known fossilized squirrels date from the Eocene epoch, and among other living rodent families, the squirrels are most closely related to the mountain beaver and to the dormice."
+     
+     
+      }
+  ]
+  

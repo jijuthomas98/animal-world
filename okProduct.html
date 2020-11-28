@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%ANIMALNAME%} {%IMAGE%}</title>
+    <style>
+        html {
+  font-size: 62.5%;
+box-sizing: border-box;
+background:linear-gradient(to bottom, #ff4e50, #e4c112);
+
+}
+h1{
+       
+       font-family: 'Megrim', sans-serif;
+       font-size: 7rem;
+       color: white;
+       transform: skewY(-10deg);
+       text-align: center;
+       position: relative;
+       word-spacing: 3px;
+       padding-top:40px ;
+     }
+
+      .container {
+        width: 95rem;
+        margin: 0 auto;
+      }
+
+      .product {
+        width: 80rem;
+        margin: 0 auto;
+        margin-top: 9rem;
+        background: white;
+        box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+
+      .product__hero {
+        position: relative;
+        height: 30rem;
+        overflow: hidden;
+      }
+
+      .product__hero::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image:linear-gradient(to left bottom, #ff4e50, #e4c112);
+        opacity: 0.5;
+        z-index: 100;
+      }
+
+      .product__emoji {
+        font-size: 13rem;
+        position: absolute;
+      }
+
+      .product__emoji--1 {
+        top: -4rem;
+        left: -2rem;
+        z-index: 10;
+      }
+
+      .product__emoji--2 {
+        top: 3rem;
+        left: 20rem;
+        z-index: 10;
+      }
+
+      .product__emoji--3 {
+        top: -1rem;
+        right: 15rem;
+        z-index: 10;
+      }
+
+      .product__emoji--4 {
+        top: -5rem;
+        right: 0rem;
+        z-index: 10;
+       
+      }
+
+      .product__emoji--5 {
+        bottom: -5rem;
+        left: 38rem;
+        z-index: 10;
+      }
+
+      .product__emoji--6 {
+        bottom: -5rem;
+        left: 2rem;
+        z-index: 10;
+      }
+
+      .product__back:link,
+      .product__back:visited {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        z-index: 1000;
+        color: #555;
+        background-color: white;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+        border-radius: 100rem;
+        padding: 0 2rem;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+      }
+
+      .product__back:hover,
+      .product__back:active {
+        cursor:default ;
+          transition: 100s;
+          background:linear-gradient(to bottom, #ff4e50, #e4c112);
+      }
+
+      .product__name {
+        background: linear-gradient(to bottom, #e35b00, rgb(56, 41, 0));
+        padding: 2rem;
+        font-family: 'Megrim', sans-serif;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        word-spacing: 2px;
+        cursor: default;
+      }
+
+      .product__details {
+        background-color: #eee;
+        padding: 4rem 6rem;
+      }
+
+      .product__description {
+        padding: 5rem 6rem;
+        font-size: 2rem;
+        line-height: 1.8;
+        cursor: default;
+      }
+
+      .product__link:link,
+      .product__link:visited {
+        display: block;
+        background-color: #79e17b;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem;
+        text-align: center;
+        transform: scale(1.07) skewX(-20deg);
+        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+      }
+
+      .product__link:hover,
+      .product__link:active {
+        background-color: #9be15d;
+        transform: scale(1.1) skewX(-20deg);
+      }
+
+      .product__link span {
+        transform: skewX(20deg);
+      }
+
+      .emoji-left {
+        font-size: 7rem;
+        margin-right: 1rem;
+      }
+
+      .emoji-right {
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+.From{
+    font-size: 3rem;
+    cursor: default;
+
+
+}.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+}
+
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .15s;
+}
+
+.content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>#Cool Animal<br>NO.{%NO%}</h1>
+
+      <figure class="product">
+        <a href="/overview" class="product__back">
+         Back
+        </a>
+        <div class="product__hero">
+          <span class="product__emoji product__emoji--1">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--2">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--3">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--4">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--5">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--6">{%IMAGE%}</span>
+        </div>
+        <h2 class="product__name">{%ANIMALNAME%}</h2>
+        <div class="product__details">
+          <p class="From"><span class="emoji-left">🌍</span>From {%FROM%}</p>
+        </div>
+
+  
+        <p class="product__description">
+          {%DESCRIPTION%}
+        </p>
+      </figure>
+      
+    </div>
+     <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+  </body>
+</html>

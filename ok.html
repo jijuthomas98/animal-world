@@ -1,0 +1,302 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+       
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+box-sizing: border-box;
+background:linear-gradient(to bottom, #ff4e50, #e4c112);
+
+}
+
+.container {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+.animals_container {
+    height: auto;
+    width: 70vw;
+    margin: 3.5rem auto;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:30rem;
+    grid-auto-rows: 30rem;
+    grid-gap: 3rem;
+
+    justify-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .animals_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .animals_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+h1{
+       
+       font-family: 'Megrim', sans-serif;
+       font-size: 8rem;
+       color: white;
+       transform: skewY(-5deg);
+       text-align: center;
+       position: relative;
+       word-spacing: 3px;
+       padding-top:40px ;
+     }
+     h1::before {
+        content: '';
+        display: block;
+        height: 55%;
+        width: 25%;
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        background: linear-gradient(to bottom, #ff4e50, #f9d423);
+        opacity: 0.8;
+        z-index: -1;
+        transform: skewY(375deg) translate(-50%, -50%);
+        
+      }
+
+span {
+    font-weight: 600;
+}
+
+.card {
+    max-width: 315px;
+    min-width: 225px;
+    border-radius: 1rem;
+    perspective: 150rem;
+    -webkit-perspective: 150rem;
+    transition: all .5s;
+}
+
+.card:hover .card__side--front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card__side--back {
+    transform: rotateY(0);
+}
+
+.card__side--front {
+    padding: 1rem;
+    background-color: white;
+    backdrop-filter: saturate(150%);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    border-radius: inherit;
+    width: 100%;
+    height:100%;
+    cursor: default;
+    transition: all .8s ease;
+    position: absolute;
+    backface-visibility: hidden;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    grid-template-rows: 1fr;
+}
+
+.card__side--back {
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    transition: all .8s ease;
+    overflow: hidden;
+    background-color: white;
+    cursor: default;
+
+}
+
+.opacity {
+    opacity: .25;
+    height: calc(100% - 2rem);
+    margin: 1rem;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    grid-template-rows: 1fr;
+}
+
+.animal__emoji {
+    font-size: 8rem;
+    text-align: center;
+    align-self: center;
+}
+
+.animal__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+}
+
+.animal__from {
+ font-size: 1.5rem;
+  text-align: center;
+}
+
+.animal__description {
+    margin-left: .05rem;
+    
+}
+
+.animal__link--div {
+    text-align: center;
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    top: 25%;
+    transform: skewY(-15deg);
+    position: absolute;
+    width: 100%;
+    padding: 4rem;
+    box-shadow: 2px 8px 15px rgba(0,0,0,.5);
+    z-index: 2;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.animal__link--div:hover {
+    transform:translateY(-1.5rem) skewY(-15deg);
+    box-shadow: 2px 10px 15px rgba(0,0,0,.5);
+}
+
+
+.animal__link--div:hover::after {
+    position: absolute;
+    z-index: -154;
+    width: 100%;
+    height: calc(100% + 1.5rem);
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+.animal__link--div:hover .animal__link {
+    text-shadow:
+    -1px -1px 0 #000,
+    0   -1px 0 #000,
+    1px -1px 0 #000,
+    1px  0   0 #000,
+    1px  1px 0 #000,
+    0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+}
+
+.animal__link {
+    text-decoration: none;
+    display: block;
+    color: white;
+    height: 100%;
+    width: 100%;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.animal__link > span {
+    width: max-content;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    display: inline-grid;
+    top: 0;
+    left: 0;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+}
+
+.fixit {
+    display: block;
+    transform: scaleY(1.5);
+}
+
+.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+}
+
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .15s;
+}
+
+.content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+}
+
+    </style>
+</head>
+
+    <body>
+
+        <div class="container">
+            <h1 class="page-title">Animals</h1>
+
+            <div class="animals_container">
+              {%PRODUCT_CARDS%}
+        </div>
+ <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+    
+</body>
+</html>
